@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito_2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM\ Sans_2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --sec-font: "DM Sans", sans-serif;
+  --third-font: "Nunito", sans-serif;
+  --fourth-font: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #fff !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+ul {
+  list-style: none;
+}
+
+/* .blogs-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+} */
+
+.blogs-header {
+  border: 2px solid #fff;
+  padding: 8px 0;
+}
+
+.blogs-navigation {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -60%;
+  right: 0;
+  left: 0;
+  background: #5a4242;
+  height: 60%;
+  padding: 80px 0px 45px 25px;
+  justify-content: start;
+  align-items: start;
+  justify-content: space-around;
+  transition: 0.5s;
+  gap: 10px;
+}
+
+.blogs-navigation li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar-toggle {
+  border: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.lines {
+  width: 28px;
+  display: block;
+  position: relative;
+  margin: 15px;
+  height: 18px;
+}
+.navbar-toggle span {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease;
+  border-radius: 5px;
+}
+
+.blogs-search {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  z-index: 0;
+}
+
+.blogs-search input {
+  border-radius: 0;
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 3px 5px;
+  color: #fff;
+  width: 250px;
+}
+
+.blogs-search input::placeholder {
+  color: #fff !important;
+}
+input::-moz-placeholder {
+  color: #fff !important;
+}
+.blogs-search .fa-user {
+  border: 2px solid #fff;
+
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.blogs-search .search-icon {
+  position: absolute;
+  right: 85px;
+  color: #fff;
+  font-weight: 400 !important;
+}
+
+.page-title {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: var(--third-font);
+}
+
+.block-title {
+  font-size: 40px;
+  font-family: var(--fourth-font);
+}
+.block-desc {
+  font-size: 17px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-family: var(--sec-font);
+}
+.girlwith-dogs {
+  width: 100%;
+  aspect-ratio: 16/7;
+}
+.dog,
+.babywdog {
+  width: 100%;
+  aspect-ratio: 16/12;
+}
+
+@media (max-width: 767px) {
+  .blogs-search {
+    gap: 20px;
+  }
+  .blogs-search input {
+    width: 180px;
+  }
+  .page-title {
+    font-size: 45px;
+  }
+  .blogs-search .search-icon {
+    right: 60px;
+  }
+}

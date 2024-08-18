@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: CopperplateCopperplate Gothic;
+  src: url("../fonts/Copperplate\ Gothic\ LT\ Pro\ 29\ BC.ttf")
+      format("truetype"),
+    url("../fonts/Copperplate\ Gothic\ LT\ Pro\ 29\ BC.woff2") format("woff2"),
+    url("../fonts/Copperplate\ Gothic\ LT\ Pro\ 29\ BC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM\ Sans_2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito_2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Agrandir";
+  src: url("../fonts/Agrandir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-font: "Copperplate Gothic", sans-serif;
+  --sec-font: "DM Sans", sans-serif;
+  --third-font: "Nunito", sans-serif;
+    --agrandir-font: "Agrandir", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #fff !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+   overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.logo .logo-img {
+  width: 65%;
+  min-width: 120px;
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.f_name {
+  font-size: 25px;
+  margin-top: -30px;
+  font-weight: 300;
+}
+
+.l_name {
+  text-align: center;
+  margin-top: -8px;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.banner {
+   overflow: hidden;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.nitesh-img {
+  display: flex;
+  justify-content: end;
+}
+
+.nitesh-img img {
+  position: absolute;
+  bottom: 0;
+  height: 115vh;
+  right: 0;
+}
+
+.quote {
+  font-size: 22px;
+  font-family: "Copperplate Gothic", sans-serif;
+  text-align: justify;
+}
+.mg {
+  font-size: 23px;
+  font-family: "Copperplate Gothic", sans-serif;
+}
+
+.know-more {
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+  margin-top: 110px;
+  margin-left: 100px;
+}
+.km-btn {
+  background: #fff;
+  color: #000;
+  padding: 10px 70px;
+  font-size: 20px;
+  font-family: var(--agrandir-font);
+  font-weight: 500;
+}
+/* ABOUT PAGE */
+.search-container {
+  border-radius: 6px;
+  border: 2px solid #222;
+  background-color: #fff;
+  padding: 3px;
+  width: 280px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 23px;
+  right: 64px;
+}
+
+.search-container input[type="text"] {
+  border-radius: 2px;
+  border: 2px solid #444;
+  outline: none;
+  flex: 1;
+  padding: 6px 5px;
+  font-size: 14px;
+  width: 232px;
+}
+
+.search-container input::placeholder {
+  font-weight: 900;
+  color: #000;
+  /* background-color: red; */
+  word-spacing: 0;
+  white-space: nowrap;
+}
+
+.search-container button {
+  position: absolute;
+  right: 7px;
+  top: 0;
+  border-left: 2px solid #444;
+  height: 100%;
+}
+
+.search-container button i {
+  width: 20px; /* Adjust as needed */
+  height: 20px;
+}
+
+.description {
+  font-size: 18px;
+  text-align: justify;
+  word-spacing: 13px;
+  text-transform: uppercase;
+  font-family: "Copperplate Gothic", sans-serif;
+}
+
+.mob-desc {
+  display: none;
+  font-family: "Copperplate Gothic", sans-serif;
+}
+
+.page-title {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.row_1_img_group img {
+  width: 30%;
+  /* height: 100%; */
+}
+
+.row_1_img_group {
+  display: flex;
+  /* align-items: center; */
+  gap: 15px;
+  align-self: flex-start;
+}
+
+.row_2_img1 {
+  width: 100% !important;
+  aspect-ratio: 16 / 6;
+  height: 100%;
+}
+
+.row_2_img2 {
+  width: 45%;
+}
+
+.row_2_img3 {
+  width: 45%;
+  /* height: 100%; */
+}
+
+.pray_img {
+  aspect-ratio: 16 / 11;
+}
+
+.brand-title .brand {
+  width: 25%;
+}
+
+.brand-title .star {
+  width: 60px;
+  filter: invert(100%) brightness(2);
+}
+
+.brands .brand-item {
+  /* background-color: #5a4242;
+  width: 250px;
+  height: 250px; */
+  border-radius: 30px;
+  border: 2px solid #fff;
+}
+
+.brand-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+.brand-item p {
+  color: #fff;
+  font-size: 18px;
+  text-align: justify;
+}
+.block-img {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+}
+
+.block-title {
+  text-align: center;
+  letter-spacing: 7px;
+  font-size: 40px;
+}
+
+.navbar-toggle {
+  border: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: none;
+}
+.lines {
+  width: 28px;
+  display: block;
+  position: relative;
+  /* margin: 30px 0 26px 10px; */
+  height: 18px;
+}
+.navbar-toggle span {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  header {
+    /* padding-left: 10px; */
+    padding-right: 10px;
+  }
+  .banner .nitesh-img img {
+    position: static;
+    height: 100%;
+  }
+  .know-more {
+    margin-top: 0;
+  }
+  .nitesh-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .km-btn {
+    padding: 10px 40px;
+  }
+  .search-container {
+    display: none;
+  }
+  .lg-desc {
+    display: none;
+  }
+  .mob-desc {
+    display: block;
+  }
+  .row_2_img1 {
+    aspect-ratio: 16 / 8;
+  }
+  .brand-title .brand {
+    width: 35%;
+  }
+  .post-banner {
+    aspect-ratio: 16 / 9 !important;
+  }
+}
+@media (max-width: 767px) {
+  .know-more {
+    display: block;
+    width: 220px;
+    margin: auto;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: -50%;
+    right: 0;
+    left: 0;
+    background: #5a4242;
+    height: 50%;
+    padding: 80px 0px 45px 25px;
+    justify-content: start;
+    align-items: start;
+    justify-content: space-around;
+    transition: 0.5s;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .brand-title .brand {
+    width: 50%;
+  }
+  .page-title {
+    font-size: 40px;
+  }
+  .left {
+    width: 90% !important;
+  }
+  .right {
+    margin-bottom: 100px;
+  }
+}
+
+.post-banner {
+  border: 2px solid #000;
+  border-radius: 15px;
+  width: 100%;
+  aspect-ratio: 16 / 6;
+}
+
+.post-page-title {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.post-banner-desc {
+  font-family: var(--third-font);
+  font-size: 29px;
+  color: #cbc9c9;
+}
+
+.left {
+  border-radius: 20px;
+  margin-top: -50px !important;
+  height: 100%;
+}
+.post1-img {
+  width: 100%;
+}
+
+.recent-post-tag {
+  background: #07a095;
+  width: 250px;
+  padding: 8px 10px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: -25px;
+}
+.recent-post-tag h5 {
+  margin: 0;
+}
+
+.post1-img {
+  border-radius: 18px;
+  border: 2px solid #000;
+  aspect-ratio: 14 / 7;
+}
+
+.post-title {
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+}
